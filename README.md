@@ -1,67 +1,102 @@
-<h1 align="center">Hey, I'm Siva Charan 👋</h1>
-<h3 align="center">Full Stack + AI Engineer | Final-Year CS Student | Backend-obsessed</h3>
+<div align="center">
 
-<p align="center">
-CS student obsessed with building systems that actually feel alive.
-</p>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=120&section=header&text=SIVA%20CHARAN&fontColor=00FF41&fontSize=45&fontAlignY=65&desc=Full%20Stack%20%2B%20AI%20Engineer&descAlignY=90&descColor=6de36d&fontFamily=monospace" width="100%"/>
 
-<p align="center">
-  <a href="https://protofolio-site.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="https://linkedin.com/in/sivacharan2005"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:kgsivacharan2005@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
+<br/>
 
----
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=800&color=00FF41&background=0D111700&center=true&vCenter=true&width=600&lines=whoami+%3D%3E+final-year+CS+student;building+systems+that+feel+alive;spring+boot+%2B+react+%2B+redis;debugging+at+2am%2C+shipping+by+morning)](https://git.io/typing-svg)
 
-### 🚀 About Me
+<br/>
 
-- 🎓 Final-year B.Tech CS student (2023–2027) at **G. Pullaiah College of Engineering**, Kurnool — CGPA ~8.5
-- 🧠 Deep in DSA — **1721 rating on LeetCode**, top 12% globally, 500+ problems solved
-- 🛠️ Currently building backend depth through **Spring Boot, Redis, WebSockets, and distributed systems patterns**
-- 🎯 Targeting product-based companies for placements starting **August 2026**
-- 💬 Ask me about React, Spring Boot, or system design for real-time apps
+[![Portfolio](https://img.shields.io/badge/Portfolio-00FF41?style=for-the-badge&logo=vercel&logoColor=0d1117&labelColor=0d1117)](https://protofolio-site.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-00FF41?style=for-the-badge&logo=linkedin&logoColor=0d1117&labelColor=0d1117)](https://linkedin.com/in/sivacharan2005)
+[![Email](https://img.shields.io/badge/Email-00FF41?style=for-the-badge&logo=gmail&logoColor=0d1117&labelColor=0d1117)](mailto:kgsivacharan2005@gmail.com)
 
----
+</div>
 
-### 🧰 Tech Stack
+<br/>
 
-<p align="left">
-<img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
-<img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
-<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white" />
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
-</p>
+```bash
+> cat about.md
+```
+```
+final-year CS student @ G. Pullaiah College of Engineering, Kurnool  (CGPA ~8.5)
+grinding DSA — 1721 on LeetCode, top 12% globally, 500+ problems solved
+currently deep in backend internals: Spring Security, Redis, WebSockets, distributed systems
+this week: monotonic stack problems — Sum of Subarray Minimums, Trapping Rain Water
+hunting for a product-based role — off-campus, starting Aug 2026
+```
 
----
+<br/>
 
-### 🔥 Featured Projects
+```bash
+> ls stack/
+```
 
-| Project | Description | Tech |
-|---|---|---|
-| 🧩 [**EDU2JOB**](https://github.com/Siva2583/EDU2JOB-SPRING) | Spring Boot backend mastery lab — Security, JWT, Flyway, AOP, Redis caching, WebSockets/STOMP | Spring Boot, JWT |
-| 🌍 [**Voyager**](https://github.com/Siva2583/Voyager) | AI travel planner powered by Gemini API | Flask, Gemini API, React |
-| 📊 [**AlgoViz**](https://github.com/Siva2583/Algoviz) | Algorithm visualizer with 12 modules, animated tracer, and a 10-section tutorial tab | React, Vite |
-| 🖥️ [**Portfolio Site**](https://protofolio-site.vercel.app) | Terminal/hacker-themed personal portfolio | HTML, CSS, JS |
+<div align="center">
 
----
+<img src="https://skillicons.dev/icons?i=java,spring,js,react,nodejs,mongodb,redis,docker,aws,git&theme=dark" />
 
-### 📈 GitHub Stats
+</div>
 
-<p align="center">
-  <img height="165em" src="https://github-readme-stats.vercel.app/api?username=Siva2583&show_icons=true&theme=dark&hide_border=true&count_private=true" />
-  <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Siva2583&layout=compact&theme=dark&hide_border=true" />
-</p>
+<br/>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Siva2583&theme=dark&hide_border=true" />
-</p>
+```bash
+> ls projects/ --pinned
+```
 
----
+<table>
+<tr>
+<td width="50%" valign="top">
 
-<p align="center"><i>Building in public, one commit at a time 🚀</i></p>
+**[EDU2JOB](https://github.com/Siva2583/EDU2JOB-SPRING)**
+Spring Boot backend lab — Security, JWT, Flyway, AOP, Redis caching, WebSockets/STOMP
+`Spring Boot` `JWT` `Redis`
+
+</td>
+<td width="50%" valign="top">
+
+**[Voyager](https://github.com/Siva2583/Voyager)**
+AI-powered travel planner built on the Gemini API
+`Flask` `Gemini API` `React`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**[AlgoViz](https://github.com/Siva2583/Algoviz)**
+Algorithm visualizer — 12 modules, animated tracer, 10-part tutorial
+`React` `Vite`
+
+</td>
+<td width="50%" valign="top">
+
+**[Portfolio Site](https://protofolio-site.vercel.app)**
+Terminal/hacker-themed personal site
+`HTML` `CSS` `JS`
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+```bash
+> git log --stats
+```
+
+<div align="center">
+
+<img src="https://github-stats-extended.vercel.app/api?username=Siva2583&show_icons=true&hide_border=true&bg_color=0d1117&title_color=00FF41&text_color=6de36d&icon_color=00FF41&count_private=true" height="165"/>
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Siva2583&layout=compact&hide_border=true&bg_color=0d1117&title_color=00FF41&text_color=6de36d" height="165"/>
+
+<br/>
+
+<img src="https://streak-stats.demolab.com?user=Siva2583&hide_border=true&background=0D1117&stroke=00FF41&ring=00FF41&fire=00FF41&currStreakLabel=6de36d&sideLabels=6de36d&dates=6de36d&currStreakNum=00FF41&sideNums=00FF41" />
+
+</div>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=60&section=footer&text=building%20in%20public%2C%20one%20commit%20at%20a%20time&fontColor=6de36d&fontSize=14&fontFamily=monospace" width="100%"/>
