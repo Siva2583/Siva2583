@@ -58,7 +58,7 @@ Spring Boot backend lab — Security, JWT, Flyway, AOP, Redis caching, WebSocket
 
 **[Voyager](https://github.com/Siva2583/Voyager-Node-FInal)**
 AI-powered travel planner built on the Groq API
-`Flask` `Groq API` `React`
+`Node` `Groq API` `React` `Express`
 
 </td>
 </tr>
