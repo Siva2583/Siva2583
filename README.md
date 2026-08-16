@@ -56,9 +56,9 @@ Spring Boot backend lab — Security, JWT, Flyway, AOP, Redis caching, WebSocket
 </td>
 <td width="50%" valign="top">
 
-**[Voyager](https://github.com/Siva2583/Voyager)**
-AI-powered travel planner built on the Gemini API
-`Flask` `Gemini API` `React`
+**[Voyager](https://github.com/Siva2583/Voyager-Node-FInal)**
+AI-powered travel planner built on the Groq API
+`Flask` `Groq API` `React`
 
 </td>
 </tr>
