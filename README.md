@@ -1,12 +1,12 @@
 <div align="center">
 
-# Siva Charan
+# SIVA CHARAN KOLLAPURAM GANDLA
 
 **Software Engineer · Backend Systems · Full-Stack Development · Applied Machine Learning**
 
 *I build software systems with a focus on backend correctness, interactive tools, and practical applications.*
 
-[Portfolio](https://protofolio-site.vercel.app) · [LinkedIn](https://linkedin.com/in/sivacharan2005) · [LeetCode](https://leetcode.com/u/siva_2853/) · [Email](mailto:kgsivacharan2005@gmail.com)
+[Portfolio](https://protofolio-site.vercel.app) · [LinkedIn](https://linkedin.com/in/siva-charan-kg-72a900284) · [LeetCode](https://leetcode.com/u/siva_2853/) · [Email](mailto:kgsivacharan2005@gmail.com)
 
 </div>
 
@@ -16,7 +16,7 @@
 
 I am a final-year B.Tech student in Computer Science and Engineering at G. Pullaiah College of Engineering, Kurnool (CGPA 8.51, expected May 2027). I am looking for software engineering roles, with my deepest work in backend services, full-stack applications, and practical machine learning.
 
-I enjoy problems where correctness is non-negotiable: financial state that must always balance, algorithms whose behaviour should be inspectable step by step, and models whose predictions have to be served and explained reliably. I have solved 500+ problems on LeetCode to keep my data-structure and algorithm fundamentals strong.
+I enjoy problems where correctness is non-negotiable: financial state that must always balance, algorithms whose behaviour should be inspectable step by step, and models whose predictions have to be served and explained reliably. I have solved 500+ problems on LeetCode to keep my data-structure and algorithm fundamentals strong. I hold the SAP Certified Back-End Developer (ABAP Cloud) certification.
 
 ---
 
@@ -31,9 +31,11 @@ I enjoy problems where correctness is non-negotiable: financial state that must 
 
 ## Featured projects
 
+Live demo: [AlgoViz 2.0](https://algoviz-2-0.vercel.app). RevertPay and EDU2JOB run from their repositories.
+
 ### 1. RevertPay: escrow and payment-reversal platform
 
-**[Repository](https://github.com/Siva2583/RevertPay-v-1.0)** · v1.0 working core · no hosted demo
+**[Repository](https://github.com/Siva2583/RevertPay-v-1.0)** · v1.0 working core
 
 An escrow and payment-reversal platform built around financial invariants: a double-entry ledger with no stored balance column, a validated escrow state machine, and money movement that commits or rolls back with the escrow state it belongs to.
 
@@ -95,7 +97,7 @@ These checks are bounded: sorting input is capped at 24 elements and the counter
 
 ### 3. EDU2JOB: career recommendation with applied ML
 
-**[Repository](https://github.com/Siva2583/EDU2JOB-SPRING)** · no hosted demo (runs locally)
+**[Repository](https://github.com/Siva2583/EDU2JOB-SPRING)**
 
 A full-stack career-recommendation application. Students enter their degree, major, CGPA, and skills; the Spring Boot API forwards the request to a Flask service that runs a scikit-learn model and returns the top job roles.
 
@@ -157,7 +159,7 @@ flowchart LR
 
 ## Certifications and achievements
 
-- **SAP Certified, Back-End Developer, ABAP Cloud**
+- **SAP Certified – Back-End Developer – ABAP Cloud**
 - **NPTEL, Programming, Data Structures & Algorithms using Python**
 - **500+ problems solved on [LeetCode](https://leetcode.com/u/siva_2853/)**
 
@@ -166,7 +168,7 @@ flowchart LR
 ## Contact
 
 - **GitHub:** [github.com/Siva2583](https://github.com/Siva2583)
-- **LinkedIn:** [linkedin.com/in/sivacharan2005](https://linkedin.com/in/sivacharan2005)
+- **LinkedIn:** [linkedin.com/in/siva-charan-kg-72a900284](https://linkedin.com/in/siva-charan-kg-72a900284)
 - **Portfolio:** [protofolio-site.vercel.app](https://protofolio-site.vercel.app)
 - **LeetCode:** [leetcode.com/u/siva_2853](https://leetcode.com/u/siva_2853/)
 - **Email:** [kgsivacharan2005@gmail.com](mailto:kgsivacharan2005@gmail.com)
