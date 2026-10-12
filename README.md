@@ -1,102 +1,178 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=120&section=header&text=SIVA%20CHARAN&fontColor=00FF41&fontSize=45&fontAlignY=65&desc=Full%20Stack%20%2B%20AI%20Engineer&descAlignY=90&descColor=6de36d&fontFamily=monospace" width="100%"/>
+# SIVA CHARAN KOLLAPURAM GANDLA
 
-<br/>
+**Software Engineer · Backend Systems · Full-Stack Development · Applied Machine Learning**
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=800&color=00FF41&background=0D111700&center=true&vCenter=true&width=600&lines=whoami+%3D%3E+final-year+CS+student;building+systems+that+feel+alive;spring+boot+%2B+react+%2B+redis;debugging+at+2am%2C+shipping+by+morning)](https://git.io/typing-svg)
+*I build software systems with a focus on backend correctness, interactive tools, and practical applications.*
 
-<br/>
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-00FF41?style=for-the-badge&logo=vercel&logoColor=0d1117&labelColor=0d1117)](https://protofolio-site.vercel.app)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-00FF41?style=for-the-badge&logo=linkedin&logoColor=0d1117&labelColor=0d1117)](https://linkedin.com/in/sivacharan2005)
-[![Email](https://img.shields.io/badge/Email-00FF41?style=for-the-badge&logo=gmail&logoColor=0d1117&labelColor=0d1117)](mailto:kgsivacharan2005@gmail.com)
+[Portfolio](https://protofolio-site.vercel.app) · [LinkedIn](https://linkedin.com/in/siva-charan-kg-72a900284) · [LeetCode](https://leetcode.com/u/siva_2853/) · [Email](mailto:kgsivacharan2005@gmail.com)
 
 </div>
 
-<br/>
+---
 
-```bash
-> cat about.md
-```
-```
-final-year CS student @ G. Pullaiah College of Engineering, Kurnool  (CGPA ~8.5)
-grinding DSA — 1721 on LeetCode, top 12% globally, 500+ problems solved
-currently deep in backend internals: Spring Security, Redis, WebSockets, distributed systems
-this week: monotonic stack problems — Sum of Subarray Minimums, Trapping Rain Water
-hunting for a product-based role — off-campus, starting Aug 2026
-```
+## About
 
-<br/>
+I am a final-year B.Tech student in Computer Science and Engineering at G. Pullaiah College of Engineering, Kurnool (CGPA 8.51, expected May 2027). I am looking for software engineering roles, with my deepest work in backend services, full-stack applications, and practical machine learning.
 
-```bash
-> ls stack/
-```
+I enjoy problems where correctness is non-negotiable: financial state that must always balance, algorithms whose behaviour should be inspectable step by step, and models whose predictions have to be served and explained reliably. I have solved 500+ problems on LeetCode to keep my data-structure and algorithm fundamentals strong. I hold the SAP Certified Back-End Developer (ABAP Cloud) certification.
 
-<div align="center">
+---
 
-<img src="https://skillicons.dev/icons?i=java,spring,js,react,nodejs,mongodb,redis,docker,aws,git&theme=dark" />
+## What I build
 
-</div>
+- **Backend correctness and secure application design:** explicit state machines, ownership checks on sensitive actions, and transactional writes (RevertPay).
+- **Full-stack systems:** React front ends backed by Spring Boot REST APIs and PostgreSQL (RevertPay, EDU2JOB).
+- **Interactive developer tools:** a browser-based algorithm laboratory with recorded execution, replay controls, and automated tests (AlgoViz 2.0).
+- **ML-powered applications:** a scikit-learn model served from a Flask API and integrated into a Spring Boot application (EDU2JOB).
 
-<br/>
+---
 
-```bash
-> ls projects/ --pinned
-```
+## Featured projects
 
-<table>
-<tr>
-<td width="50%" valign="top">
+Live demo: [AlgoViz 2.0](https://algoviz-2-0.vercel.app). RevertPay and EDU2JOB run from their repositories.
 
-**[EDU2JOB](https://github.com/Siva2583/EDU2JOB-SPRING)**
-Spring Boot backend lab — Security, JWT, Flyway, AOP, Redis caching, WebSockets/STOMP
-`Spring Boot` `JWT` `Redis`
+### 1. RevertPay: escrow and payment-reversal platform
 
-</td>
-<td width="50%" valign="top">
+**[Repository](https://github.com/Siva2583/RevertPay-v-1.0)** · v1.0 working core
 
-**[Voyager](https://github.com/Siva2583/Voyager-Node-FInal)**
-AI-powered travel planner built on the Groq API
-`Node` `Groq API` `React` `Express`
+An escrow and payment-reversal platform built around financial invariants: a double-entry ledger with no stored balance column, a validated escrow state machine, and money movement that commits or rolls back with the escrow state it belongs to.
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+**Stack:** Java 25 · Spring Boot 4.1.1 · Spring Security · JWT (HS256) · BCrypt · Spring Data JPA / Hibernate · PostgreSQL · React 19 · Vite 8
 
-**[AlgoViz](https://github.com/Siva2583/Algoviz)**
-Algorithm visualizer — 12 modules, animated tracer, 10-part tutorial
-`React` `Vite`
+**Highlights**
 
-</td>
-<td width="50%" valign="top">
+- **Double-entry ledger, derived balances.** Each transfer writes one debit and one credit in a single transaction. Balances are computed as credits minus debits, so a stored balance cannot drift from its history.
+- **Validated escrow lifecycle.** Nine states and one transition table. Illegal transitions are rejected, and every legal change is appended to an audit log with the actor, reason, and timestamp. Unconfirmed payments expire after 40 seconds through a 5-second scheduled sweep.
+- **Atomic money and state changes.** Funding and delivery confirmation run the ledger write and the status change in one `@Transactional` method. If the transition is rejected, the ledger entries roll back with it.
+- **Duplicate protection and concurrency control.** Escrow creation requires an `Idempotency-Key` header stored under a unique constraint, so a duplicate is rejected at the database level. `@Version` on escrow rows makes conflicting concurrent updates fail instead of overwriting each other.
+- **Authorization on escrow actions.** Only the buyer can fund, confirm, cancel, dispute, or confirm delivery; only the seller can ship. Each request's JWT is verified and the user is reloaded from the database, so roles are read from current data.
 
-**[Portfolio Site](https://protofolio-site.vercel.app)**
-Terminal/hacker-themed personal site
-`HTML` `CSS` `JS`
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-```bash
-> git log --stats
+```mermaid
+stateDiagram-v2
+    [*] --> PAYMENT_INITIATED: initiate with Idempotency-Key
+    PAYMENT_INITIATED --> CREATED: buyer confirms
+    PAYMENT_INITIATED --> CANCELLED: buyer cancels
+    PAYMENT_INITIATED --> EXPIRED: 40 s window elapses
+    CREATED --> FUNDED: buyer funds, ledger transfer
+    FUNDED --> SHIPPED: seller ships
+    SHIPPED --> RELEASED: buyer confirms delivery, ledger transfer
+    SHIPPED --> UNDER_REVIEW: buyer raises dispute
 ```
 
-<div align="center">
+**Known limits and planned work**
 
-<img src="https://github-stats-extended.vercel.app/api?username=Siva2583&show_icons=true&hide_border=true&bg_color=0d1117&title_color=00FF41&text_color=6de36d&icon_color=00FF41&count_private=true" height="165"/>
-<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Siva2583&layout=compact&hide_border=true&bg_color=0d1117&title_color=00FF41&text_color=6de36d" height="165"/>
+These are not implemented yet, or are only partly implemented:
 
-<br/>
+- Ownership checks cover escrow actions. The account lookup, ledger statement, and direct transfer endpoints do not yet verify that the caller owns the account. This is the next fix.
+- JWT revocation (a denylist) is not implemented, so a token stays valid until it expires after one hour.
+- Retried requests are rejected, not replayed. The original response is not returned, and there is no balance check before funding.
+- Automatic release at `autoReleaseAt` is recorded but not enforced. Dispute resolution and refunds exist in the state machine but have no endpoints yet.
+- The backend test files are present but commented out, so the repository has no active automated tests yet. The priority tests are transition validity, duplicate initiation, unauthorized access, and concurrent release.
 
-<img src="https://streak-stats.demolab.com?user=Siva2583&hide_border=true&background=0D1117&stroke=00FF41&ring=00FF41&fire=00FF41&currStreakLabel=6de36d&sideLabels=6de36d&dates=6de36d&currStreakNum=00FF41&sideNums=00FF41" />
+RevertPay is a portfolio project. It uses demo balances and is not a payment gateway integration or a production financial service.
 
-</div>
+---
 
-<br/>
+### 2. AlgoViz 2.0: interactive algorithm laboratory
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=60&section=footer&text=building%20in%20public%2C%20one%20commit%20at%20a%20time&fontColor=6de36d&fontSize=14&fontFamily=monospace" width="100%"/>
+**[Repository](https://github.com/Siva2583/Algoviz-2.0)** · **[Live demo](https://algoviz-2-0.vercel.app)** · [![Verify AlgoViz](https://github.com/Siva2583/Algoviz-2.0/actions/workflows/ci.yml/badge.svg)](https://github.com/Siva2583/Algoviz-2.0/actions/workflows/ci.yml)
+
+A browser-based learning tool that records each sorting run as a sequence of frames, then lets you replay, pause, step, seek, and compare those recorded executions.
+
+**Stack:** React 19 · JavaScript · Vite · React Router 7 · Tailwind CSS · Node.js test runner · ESLint · GitHub Actions · Vercel
+
+**Highlights**
+
+- **Engine separated from the UI.** `src/lab/engine.js` has no React imports. It validates inputs and generates recorded frames for six sorting algorithms, and React only renders the selected frame.
+- **Playback as an explicit reducer.** Play, pause, step, seek, and replay are reducer actions with bounded cursor values. A timer effect drives advancement and is cleaned up when its inputs change. A speed control adjusts the interval.
+- **Reproducible experiments.** Datasets are generated from seeds, and element IDs stay stable across frames. Up to six experiments can be saved in browser `localStorage` and exported or imported as JSON (16 KB limit).
+- **Comparison and counterexample tools.** Comparison mode runs two algorithms on identical input and compares recorded comparison events. A counterexample lab shows how a sliding-window condition (`>=` versus `===`) changes the answer, and searches a bounded input domain for a failing case.
+- **Automated checks in CI.** The suite has 14 test groups. It covers sorting correctness and trace reproducibility across 150 input cases (6 algorithms × 25 inputs), and checks the sliding-window reference against a brute-force oracle across 768 array-and-target combinations (64 arrays × 12 targets). CI runs tests, lint, and build on every push and pull request.
+
+These checks are bounded: sorting input is capped at 24 elements and the counterexample search covers a small domain. They support the specific behaviours tested, not a proof for all inputs.
+
+---
+
+### 3. EDU2JOB: career recommendation with applied ML
+
+**[Repository](https://github.com/Siva2583/EDU2JOB-SPRING)**
+
+A full-stack career-recommendation application. Students enter their degree, major, CGPA, and skills; the Spring Boot API forwards the request to a Flask service that runs a scikit-learn model and returns the top job roles.
+
+**Stack:** React 18 · Chart.js · Spring Boot 3.2.4 · Java 21 · JWT (jjwt) · BCrypt · Flask · scikit-learn 1.6.1 · Pandas · NumPy · PostgreSQL
+
+**Highlights**
+
+- **Trained model served as an artifact.** A scikit-learn pipeline one-hot encodes degree and major, scales CGPA, and applies a 30-token multi-label encoding to skills. The features feed a Random Forest, and isotonic calibration is applied over five folds (1,000 trees in total).
+- **Ranked output.** The service returns the top five roles by probability, with a 4% floor and a short career-scope description for each role.
+- **Clear service boundaries.** Spring Boot handles authentication, profiles, and prediction history. The Flask service handles feature encoding and inference and keeps no request state. The browser only talks to Spring Boot.
+- **Auditable prediction history.** Each prediction is stored with its inputs and the raw model response. The analytics view summarises past results with Chart.js.
+- **Practical feature-preparation issue.** Skills outside the model's 30-token vocabulary are dropped by the encoder. I have documented this as a known issue, with surfacing it to users on the roadmap.
+
+```mermaid
+flowchart LR
+    R["React 18 SPA"] -->|"JSON, Bearer JWT"| S["Spring Boot API"]
+    S -->|"JSON, internal call"| F["Flask ML service"]
+    F --> M["scikit-learn pipeline"]
+    S --> D[("PostgreSQL")]
+```
+
+**Limits**
+
+- The repository includes the trained model but not the training code, dataset, or evaluation results. This README therefore makes no accuracy claims.
+- Recommendations reflect patterns in historical data. They are not validated career advice.
+- The JWT signing secret and the Flask service URL are hard-coded in the source. Moving them to configuration is on the roadmap.
+
+---
+
+## Technical skills
+
+**Languages:** Java · Python · JavaScript · SQL
+
+**Frontend:** React · HTML · CSS · Tailwind CSS · Vite · Chart.js
+
+**Backend:** Spring Boot · Spring Data JPA · Hibernate · Spring Security · REST APIs · Node.js · Express.js · Flask · JWT · BCrypt
+
+**Databases:** PostgreSQL · SQL
+
+**Machine learning:** scikit-learn · Random Forest · Pandas · NumPy · Data preprocessing · Categorical encoding · Probability calibration
+
+**Tools and practices:** Git · GitHub · GitHub Actions · Maven · Vite · Node.js test runner · Vercel
+
+**Core computer science:** Data structures and algorithms · Object-oriented programming · 500+ LeetCode problems solved
+
+---
+
+## Engineering principles
+
+- **Explicit state transitions.** Escrow changes pass through one transition table. Illegal moves are rejected, and every legal move is logged (RevertPay).
+- **Secure resource ownership.** Escrow actions check that the caller is the buyer or seller before any business logic runs. Account-level endpoints are the known gap (RevertPay).
+- **Transactional consistency.** Ledger writes and state changes share a transaction, so a failed step does not leave partial money movement (RevertPay).
+- **Reproducible execution.** Runs produce deterministic frames and seeded datasets, so an experiment can be replayed and shared (AlgoViz 2.0).
+- **Automated validation.** AlgoViz 2.0 runs tests, lint, and build in CI. RevertPay and EDU2JOB still need active test suites.
+- **Separation of concerns.** The algorithm engine is independent of the UI (AlgoViz 2.0). Business logic is in Java and inference is in Python (EDU2JOB).
+- **Honest evaluation.** I only claim what the repository demonstrates. For EDU2JOB, I make no accuracy claims because the evaluation harness is not in the repository.
+
+---
+
+## Certifications and achievements
+
+- **SAP Certified – Back-End Developer – ABAP Cloud**
+- **NPTEL, Programming, Data Structures & Algorithms using Python**
+- **500+ problems solved on [LeetCode](https://leetcode.com/u/siva_2853/)**
+
+---
+
+## Contact
+
+- **GitHub:** [github.com/Siva2583](https://github.com/Siva2583)
+- **LinkedIn:** [linkedin.com/in/siva-charan-kg-72a900284](https://linkedin.com/in/siva-charan-kg-72a900284)
+- **Portfolio:** [protofolio-site.vercel.app](https://protofolio-site.vercel.app)
+- **LeetCode:** [leetcode.com/u/siva_2853](https://leetcode.com/u/siva_2853/)
+- **Email:** [kgsivacharan2005@gmail.com](mailto:kgsivacharan2005@gmail.com)
+
+---
+
+I learn by building complete systems, checking them against their own invariants, and documenting where they fall short. The repositories above show the unfinished parts as well as the working ones.
